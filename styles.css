@@ -48,7 +48,7 @@ body{
 
 
 
-/* Display card tile - Container */
+/* Home page*/
 .container {
   display: grid;
   grid-template-columns: 500px 500px;
@@ -93,9 +93,53 @@ body{
   box-shadow: 0 0 30px #f55951, 0 0 7px #f55951, 0 0 20px #f5ab51;
 }
 
+.containerAbout {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Display card tile - tile */
+.cardAbout {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-left: 10px solid #edd2cb;
+  border-radius: 2% 0 0 2%;
+}
+
+/* Display card tile - paragraph text*/
+.cardAbout__p {
+  font-size: 20px;
+  text-align: center;
+  color: #543c52;
+}
+
+/* Display card tile - image */
+.cardAbout__image {
+  background-size: cover;
+  width: 50%;
+  height: auto;
+  /* box-shadow: 0 0 30px #f55951, 0 0 7px #f55951, 0 0 20px #f5ab51; */
+}
+
+.cardAbout__image:hover {
+  background-size: cover;
+  /* border-radius: 50% 50% 0 50%; */
+  width: 50%;
+  height: auto;
+
+}
 
 
-/* flexbox */
+/* flexbox - projects page*/
 
 p{
   font-size: 15px;
@@ -155,7 +199,7 @@ h1{
 
 
 
-
+/* Footer */
 .inner_footer{
   display: block;
   width: 100%;
