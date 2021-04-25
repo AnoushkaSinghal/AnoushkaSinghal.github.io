@@ -36,11 +36,11 @@ body{
   display: inline-block;
 }
 
-.box:active{
+.active, .box:active{
   color: #f55951;
 }
 
-.box:hover{
+.active, .box:hover{
   border: 0;
   color: #f55951;
   box-shadow: 0 0 3px #f55951, 0 0 7px #f55951, 0 0 20px #f5ab51;
@@ -92,6 +92,67 @@ body{
   height: auto;
   box-shadow: 0 0 30px #f55951, 0 0 7px #f55951, 0 0 20px #f5ab51;
 }
+
+
+
+/* flexbox */
+
+p{
+  font-size: 15px;
+  text-align: center;
+  color: #543c52;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #f55951;
+
+  text-transform: uppercase;
+}
+
+.post{
+  position: relative;
+  background:#fff;
+  border-radius: 30px;
+  padding:10%;
+  margin-bottom:10%;
+
+}
+
+.post__h{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #361d32;
+  text-transform: uppercase;
+}
+.post img{
+  width:100%;
+  display: block;
+  color: #f55951;
+  border-radius: 50px;
+}
+
+.post img:hover{
+  box-shadow: 0 0 30px #f55951, 0 0 7px #f55951, 0 0 20px #f5ab51;
+}
+
+@media screen and (min-width:768px){
+  .c-multicol{
+    gap:2rem;
+    -webkit-column-width:30vw;
+    -moz-column-width:30vw;
+    column-width:30vw;
+  }
+  .post{
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+
 
 
 
